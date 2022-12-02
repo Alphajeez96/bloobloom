@@ -59,6 +59,7 @@ header {
     @apply flex items-center relative justify-start md:justify-between w-full;
 
     &:hover {
+      @apply underline;
       .dropdown {
         @apply opacity-100 -left-[57px];
       }
