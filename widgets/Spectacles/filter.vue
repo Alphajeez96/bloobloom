@@ -138,7 +138,7 @@ export default {
   @apply h-full md:h-[120px] flex flex-wrap items-center border-t border-x border-black;
 
   .content__holder {
-    @apply w-full md:w-1/3 flex  flex-wrap items-center md:h-[120px] border-r border-black px-4 md:px-8 py-3.5;
+    @apply w-full md:w-1/2 lg:w-1/3 flex  flex-wrap items-center md:h-[120px] border-r border-black px-4 md:px-8 py-3.5;
 
     &.justify__around {
       @apply justify-around border-t border-black md:border-t-0;

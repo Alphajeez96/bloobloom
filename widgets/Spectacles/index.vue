@@ -192,7 +192,7 @@ export default {
 .region__holder {
   @apply flex flex-wrap w-full;
   .product__holder {
-    @apply w-full md:w-1/3 relative border-black border-[0.5px];
+    @apply w-full md:w-1/2 xl:w-1/3 relative border-black border-[0.5px];
 
     p {
       @apply absolute top-[30px] left-[130px] md:left-[40%] font-medium text-black uppercase text-[15px] md:text-xl;
