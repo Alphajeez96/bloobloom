@@ -61,7 +61,7 @@ header {
     &:hover {
       @apply underline;
       .dropdown {
-        @apply opacity-100 -left-[57px];
+        @apply opacity-100 -left-[17px] md:-left-[57px];
       }
     }
   }
@@ -71,7 +71,7 @@ aside {
   @apply top-10 -left-[447px] z-[50px] opacity-0 transition-all duration-500;
 
   &.is__open {
-    @apply opacity-100 -left-[57px];
+    @apply opacity-100 -left-[17px] md:-left-[57px];
   }
 }
 </style>
