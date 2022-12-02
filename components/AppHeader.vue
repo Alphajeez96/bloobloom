@@ -1,9 +1,9 @@
 <template>
   <header>
-    <nav class>
+    <nav>
       <!-- Sidebar Here -->
       <template>
-        <aside class="absolute z-10" :class="{ is__open: isOpen }">
+        <aside class="absolute z-10 dropdown">
           <SideBar @handleRoute="(route) => (activeRoute = route)" />
         </aside>
 
@@ -18,11 +18,7 @@
 
       <!-- Menu Here -->
       <div class="w-1/3">
-        <a
-          class="uppercase cursor-pointer text-xs tracking-[2px]"
-          @mouseenter="isOpen = !isOpen"
-          >menu</a
-        >
+        <a class="uppercase cursor-pointer text-xs tracking-[2px]">menu</a>
       </div>
 
       <!-- Logo Here -->
@@ -61,6 +57,12 @@ header {
 
   nav {
     @apply flex items-center relative justify-start md:justify-between w-full;
+
+    &:hover {
+      .dropdown {
+        @apply opacity-100 -left-[57px];
+      }
+    }
   }
 }
 
